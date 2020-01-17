@@ -22,6 +22,8 @@
 		70343CCE21FB41CC007A1FC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70343CD121FB41CC007A1FC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70343CD321FB41CC007A1FC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70343CD921FB43D1007A1FC3 /* rubber.regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = rubber.regular.ttf; sourceTree = "<group>"; };
+		70655C1021FCDDE000EED4B2 /* ColliderWatcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ColliderWatcher.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,8 @@
 		70343CC621FB41CA007A1FC3 /* ColliderWatcher */ = {
 			isa = PBXGroup;
 			children = (
+				70655C1021FCDDE000EED4B2 /* ColliderWatcher.entitlements */,
+				70343CD921FB43D1007A1FC3 /* rubber.regular.ttf */,
 				70343CC721FB41CA007A1FC3 /* AppDelegate.swift */,
 				70343CC921FB41CA007A1FC3 /* ViewController.swift */,
 				70343CCB21FB41CA007A1FC3 /* Main.storyboard */,
@@ -96,6 +100,11 @@
 				TargetAttributes = {
 					70343CC321FB41CA007A1FC3 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.AccessWiFi = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -282,13 +291,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ColliderWatcher/ColliderWatcher.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W9HXCUL7KS;
 				INFOPLIST_FILE = ColliderWatcher/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.collider.ColliderWatcher;
+				PRODUCT_BUNDLE_IDENTIFIER = collider.watcher1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -299,13 +311,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ColliderWatcher/ColliderWatcher.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W9HXCUL7KS;
 				INFOPLIST_FILE = ColliderWatcher/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.collider.ColliderWatcher;
+				PRODUCT_BUNDLE_IDENTIFIER = collider.watcher1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
